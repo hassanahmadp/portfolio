@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 *::-webkit-scrollbar {
@@ -16,6 +17,7 @@
 }
 
 .bodyClone {
+  background: hsl(44, 100%, 95%);
   position: relative;
   width: 100vw;
   overflow-x: hidden;
@@ -28,7 +30,7 @@
 }
 
 section {
-  height: 100vh;
+  min-height: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -43,8 +45,8 @@ section {
     flex-direction: column;
     min-height: 10rem;
     flex: 1 1 14rem;
-    // background: pink;
     margin: 0.5rem;
+    box-shadow: 3px 3px 1rem rgba(0, 0, 0, 0.1);
     overflow: hidden;
     img {
       position: absolute;
@@ -61,7 +63,7 @@ section {
       left: 0;
       width: 100%;
       height: 100%;
-      background: linear-gradient(transparent 20%, rgba(0, 0, 0, 0.7));
+      background: linear-gradient(transparent, rgba(0, 0, 0, 0.822));
       display: flex;
       justify-content: flex-end;
       align-items: flex-start;
@@ -78,6 +80,21 @@ section {
       img {
         transform: scale(1.2);
       }
+    }
+  }
+
+  a {
+    background: white;
+    color: black;
+    font-size: 0.7rem;
+    margin-top: 1rem;
+    padding: 5px 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 0.3rem;
+    transition: 0.2s ease;
+    &:hover {
+      transform: scale(1.1);
     }
   }
 }

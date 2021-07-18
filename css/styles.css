@@ -3,6 +3,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 *::-webkit-scrollbar {
@@ -19,6 +20,7 @@
 }
 
 .bodyClone {
+  background: #fff8e6;
   position: relative;
   width: 100vw;
   overflow-x: hidden;
@@ -31,7 +33,7 @@
 }
 
 section {
-  height: 100vh;
+  min-height: 20vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -66,6 +68,8 @@ section {
       -ms-flex: 1 1 14rem;
           flex: 1 1 14rem;
   margin: 0.5rem;
+  -webkit-box-shadow: 3px 3px 1rem rgba(0, 0, 0, 0.1);
+          box-shadow: 3px 3px 1rem rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
 
@@ -87,8 +91,8 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, transparent), to(rgba(0, 0, 0, 0.7)));
-  background: linear-gradient(transparent 20%, rgba(0, 0, 0, 0.7));
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.822)));
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.822));
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -118,5 +122,23 @@ section {
 .portfolio .single:hover img {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+}
+
+.portfolio a {
+  background: white;
+  color: black;
+  font-size: 0.7rem;
+  margin-top: 1rem;
+  padding: 5px 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 0.3rem;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+.portfolio a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 /*# sourceMappingURL=styles.css.map */
