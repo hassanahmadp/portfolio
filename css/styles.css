@@ -120,6 +120,7 @@ section a:nth-child(2):hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 3rem 0;
 }
 
 .portfolio main {
