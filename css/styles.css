@@ -45,8 +45,7 @@ h1 {
   border-bottom: 3px solid rgba(212, 212, 212, 0);
 }
 
-h2:hover,
-h1:hover {
+h2:hover {
   border-bottom: 3px solid #d4d4d4;
 }
 
@@ -74,6 +73,11 @@ section h1 {
   letter-spacing: 0.3rem;
 }
 
+section p,
+section a {
+  font-size: 1.3rem;
+}
+
 section a {
   text-decoration: none;
   padding: 10px 25px;
@@ -81,11 +85,28 @@ section a {
   font-weight: bold;
   margin: 1rem;
   border-radius: 5px;
-  background: #ffadad;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
 }
 
 section a:nth-child(1) {
   background: #4dff4d;
+  -webkit-box-shadow: 0 0 1rem rgba(77, 255, 77, 0.5);
+          box-shadow: 0 0 1rem rgba(77, 255, 77, 0.5);
+}
+
+section a:nth-child(1):hover {
+  background: rgba(77, 255, 77, 0.5);
+}
+
+section a:nth-child(2) {
+  background: #ffadad;
+  -webkit-box-shadow: 0 0 1rem rgba(138, 56, 56, 0.5);
+          box-shadow: 0 0 1rem rgba(138, 56, 56, 0.5);
+}
+
+section a:nth-child(2):hover {
+  background: rgba(255, 173, 173, 0.5);
 }
 
 .portfolio {
@@ -164,6 +185,12 @@ section a:nth-child(1) {
           transform: translateY(100%);
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
+}
+
+.portfolio main .single .overlay h3 {
+  position: relative;
+  text-transform: capitalize;
+  padding-bottom: 0.5rem;
 }
 
 .portfolio main .single:hover .overlay {
