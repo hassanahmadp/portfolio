@@ -17,11 +17,6 @@
     position: fixed;
     background: color(dark);
     transition: 0.3s ease;
-    &.scrolled {
-      color: color(dark);
-      background: white;
-      box-shadow: 0 0 1rem rgba(87, 87, 87, 0.534);
-    }
     .cont {
       padding: 1rem !important;
       display: flex;
@@ -54,6 +49,19 @@
           &:hover {
             background: color(dark);
             color: color(neon-blue);
+          }
+        }
+      }
+    }
+    &.scrolled {
+      color: color(dark);
+      background: white;
+      box-shadow: 0 0 1rem rgba(87, 87, 87, 0.534);
+      .nav {
+        &-button {
+          color: white;
+          &:hover {
+            background: white;
           }
         }
       }
@@ -131,6 +139,7 @@
     position: relative;
 
     img {
+      pointer-events: none;
       position: absolute;
       height: 100%;
       left: 50%;
