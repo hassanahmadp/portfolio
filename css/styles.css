@@ -62,9 +62,18 @@
   z-index: 10;
   top: 0;
   left: 0;
-  width: calc(100% - 5px);
+  width: 100%;
   position: fixed;
   background: #161616;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.sect-1 header.scrolled {
+  color: #161616;
+  background: white;
+  -webkit-box-shadow: 0 0 1rem rgba(87, 87, 87, 0.534);
+          box-shadow: 0 0 1rem rgba(87, 87, 87, 0.534);
 }
 
 .sect-1 header .cont {
