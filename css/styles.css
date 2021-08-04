@@ -24,7 +24,7 @@
 
 .bodyClone {
   position: relative;
-  width: 100vw;
+  width: calc(100vw - 5px);
   overflow-x: hidden;
   color: #595959;
 }
