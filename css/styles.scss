@@ -96,6 +96,7 @@ $colors: (
         z-index: 9;
         display: none;
         transition: 0.3s ease;
+        object-fit: contain;
         // transform: scale(0.8);
       }
 
