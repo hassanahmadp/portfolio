@@ -5,7 +5,7 @@ $colors: (
   neon-yellow: #fee600,
   dark: #161616,
   light: #f2f2f2,
-  ternary: #898989,
+  ternary: #898989
 );
 
 @function color($c) {
@@ -86,7 +86,20 @@ $colors: (
       margin: 0.5rem;
       box-shadow: 0 0 1.5rem hsla(0, 0%, 0%, 0.205);
       overflow: hidden;
-      img {
+
+      img.cmngSoon {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 9;
+        display: none;
+        transition: 0.3s ease;
+        // transform: scale(0.8);
+      }
+
+      img.cover {
         position: absolute;
         top: 0;
         left: 0;
@@ -110,6 +123,7 @@ $colors: (
         color: white;
         transform: translateY(100%);
         transition: 0.3s ease;
+        z-index: 100;
 
         h3 {
           position: relative;
@@ -139,6 +153,15 @@ $colors: (
       transition: 0.2s ease;
       &:hover {
         transform: scale(1.1);
+      }
+    }
+    .incomplete {
+      img.cmngSoon {
+        display: block !important;
+      }
+
+      .link {
+        pointer-events: none;
       }
     }
   }

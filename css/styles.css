@@ -499,7 +499,19 @@
   overflow: hidden;
 }
 
-.portfolio main .single img {
+.portfolio main .single img.cmngSoon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 9;
+  display: none;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.portfolio main .single img.cover {
   position: absolute;
   top: 0;
   left: 0;
@@ -538,6 +550,7 @@
           transform: translateY(100%);
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
+  z-index: 100;
 }
 
 .portfolio main .single .overlay h3 {
@@ -572,5 +585,13 @@
 .portfolio main a:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.portfolio main .incomplete img.cmngSoon {
+  display: block !important;
+}
+
+.portfolio main .incomplete .link {
+  pointer-events: none;
 }
 /*# sourceMappingURL=styles.css.map */
