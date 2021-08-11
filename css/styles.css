@@ -490,6 +490,16 @@
 @media (max-width: 500px) {
   .loadDelayer h1 {
     font-size: 1rem;
+    text-align: center;
+  }
+  .loadDelayer h1 span {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 313px) {
+  .loadDelayer h1 {
+    font-size: 1rem;
   }
   .loadDelayer h1 span {
     font-size: 2rem;
