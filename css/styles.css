@@ -463,6 +463,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -480,6 +484,39 @@
 .loadDelayer h1 span {
   font-size: 4rem;
   color: #3dcfd3;
+}
+
+.loadDelayer .preload-anim {
+  width: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.loadDelayer .preload-anim .dot {
+  margin: 0 auto;
+  opacity: 0;
+  background: #3dcfd3;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+}
+
+.loadDelayer .preload-anim .dot1 {
+  -webkit-animation: dotAnimation 3s ease 0s infinite alternate;
+          animation: dotAnimation 3s ease 0s infinite alternate;
+}
+
+.loadDelayer .preload-anim .dot2 {
+  -webkit-animation: dotAnimation 3s ease 1s infinite alternate;
+          animation: dotAnimation 3s ease 1s infinite alternate;
+}
+
+.loadDelayer .preload-anim .dot3 {
+  -webkit-animation: dotAnimation 3s ease 2s infinite alternate;
+          animation: dotAnimation 3s ease 2s infinite alternate;
 }
 
 .loadDelayer.get-lost {
@@ -503,6 +540,24 @@
   }
   .loadDelayer h1 span {
     font-size: 2rem;
+  }
+}
+
+@-webkit-keyframes dotAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes dotAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
