@@ -4,7 +4,7 @@
     "sources": [
         "styles.scss",
         "_head.scss",
-        "preloader.scss"
+        "_preloader.scss"
     ],
     "names": [],
     "file": "styles.css"
