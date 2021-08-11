@@ -451,7 +451,7 @@
   height: 100vh;
   background: #303030;
   position: fixed;
-  z-index: 99999;
+  z-index: 9999;
   -webkit-transition: -webkit-transform 1s ease 0.3s;
   transition: -webkit-transform 1s ease 0.3s;
   transition: transform 1s ease 0.3s;
