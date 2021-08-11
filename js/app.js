@@ -2,6 +2,7 @@ const stairs = document.querySelector(".stairs");
 const nav = document.querySelector(".nav");
 const logo = document.querySelector(".logo");
 const header = document.querySelector("header");
+const preloader = document.querySelector(".loadDelayer");
 
 // Menu toggle actions
 stairs.addEventListener("click", () => {
@@ -17,4 +18,9 @@ document.addEventListener("scroll", () => {
     } else {
         header.classList.remove("scrolled");
     }
+});
+
+// preloader
+window.addEventListener('load', () => {
+    preloader.classList.add('get-lost');
 });
