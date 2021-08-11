@@ -452,10 +452,10 @@
   background: #303030;
   position: fixed;
   z-index: 99999;
-  -webkit-transition: -webkit-transform 1s ease 1s;
-  transition: -webkit-transform 1s ease 1s;
-  transition: transform 1s ease 1s;
-  transition: transform 1s ease 1s, -webkit-transform 1s ease 1s;
+  -webkit-transition: -webkit-transform 1s ease 0.3s;
+  transition: -webkit-transform 1s ease 0.3s;
+  transition: transform 1s ease 0.3s;
+  transition: transform 1s ease 0.3s, -webkit-transform 1s ease 0.3s;
 }
 
 .loadDelayer main {
