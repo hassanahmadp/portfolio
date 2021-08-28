@@ -50,6 +50,10 @@ $colors: (
   }
 }
 
+.nav-link {
+  cursor: pointer;
+}
+
 @import "./head";
 @import "./preloader";
 
@@ -77,13 +81,13 @@ $colors: (
   }
 
   main {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, auto));
     .single {
       position: relative;
       flex-direction: column;
       min-height: 14rem;
-      flex: 1 1 14rem;
+      // flex: 1 1 14rem;
       margin: 0.5rem;
       box-shadow: 0 0 1.5rem hsla(0, 0%, 0%, 0.205);
       overflow: hidden;
@@ -168,3 +172,5 @@ $colors: (
     }
   }
 }
+
+@import "./contactOL";

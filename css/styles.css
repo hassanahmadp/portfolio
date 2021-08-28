@@ -41,6 +41,10 @@
   margin: 0 auto;
 }
 
+.nav-link {
+  cursor: pointer;
+}
+
 .sect-1 {
   padding-top: 7rem;
   position: relative;
@@ -100,6 +104,7 @@
   font-weight: 500;
   text-transform: uppercase;
   font-size: 12px;
+  cursor: pointer;
 }
 
 .sect-1 header .cont .nav-link {
@@ -193,6 +198,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 
 .sect-1 .logo img {
@@ -451,7 +457,7 @@
   height: 100vh;
   background: #303030;
   position: fixed;
-  z-index: 9999;
+  z-index: 99999;
   -webkit-transition: -webkit-transform 1s ease 0.3s;
   transition: -webkit-transform 1s ease 0.3s;
   transition: transform 1s ease 0.3s;
@@ -591,11 +597,10 @@
 }
 
 .portfolio main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(15rem, auto))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(15rem, auto));
 }
 
 .portfolio main .single {
@@ -605,9 +610,6 @@
       -ms-flex-direction: column;
           flex-direction: column;
   min-height: 14rem;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 14rem;
-          flex: 1 1 14rem;
   margin: 0.5rem;
   -webkit-box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.205);
           box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.205);
@@ -710,5 +712,119 @@
 
 .portfolio main .incomplete .link {
   pointer-events: none;
+}
+
+.contactOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  width: 100vw;
+  z-index: 1000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none !important;
+}
+
+.contactOverlay .overContact {
+  background: black;
+  opacity: 0.74;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.contactOverlay .social {
+  -webkit-box-shadow: 0 0 3rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 3rem rgba(0, 0, 0, 0.5);
+  max-height: 100vh;
+  overflow: scroll;
+  position: relative;
+  padding: 2rem;
+  margin: 1rem;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  max-width: 40rem;
+  background: #f2f2f2;
+}
+
+.contactOverlay .social > p {
+  opacity: 0.7;
+  margin: 0.5rem 0 1rem;
+}
+
+.contactOverlay .social_links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contactOverlay .social_img {
+  height: 3rem;
+  width: auto;
+}
+
+.contactOverlay .social_single {
+  padding: 0.5rem;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 5rem;
+          flex: 0 1 5rem;
+  text-decoration: none;
+}
+
+.contactOverlay .social_single p {
+  font-size: 0.8rem;
+  color: #161616;
+}
+
+.contactOverlay .socialAlert {
+  position: absolute;
+  background: #636363;
+  color: #3dcfd3;
+  top: 30px;
+  left: 50%;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  font-weight: 600;
+  -webkit-transform: translate(-50%, -100px);
+          transform: translate(-50%, -100px);
+}
+
+.contactOverlay .socialAlert.active {
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+.contactOverlay.active {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+@media (max-width: 500px) {
+  .contactOverlay .social {
+    padding: 2rem 1rem;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
