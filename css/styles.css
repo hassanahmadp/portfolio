@@ -806,13 +806,14 @@
   color: #3dcfd3;
   top: 30px;
   left: 50%;
+  text-align: center;
   padding: 0.5rem 1rem;
   border-radius: 1rem;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
   font-weight: 600;
-  -webkit-transform: translate(-50%, -100px);
-          transform: translate(-50%, -100px);
+  -webkit-transform: translate(-50%, -200px);
+          transform: translate(-50%, -200px);
 }
 
 .contactOverlay .socialAlert.active {

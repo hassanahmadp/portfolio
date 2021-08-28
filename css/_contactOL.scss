@@ -69,11 +69,12 @@
     color: color(neon-blue);
     top: 30px;
     left: 50%;
+    text-align: center;
     padding: 0.5rem 1rem;
     border-radius: 1rem;
     transition: 0.3s ease;
     font-weight: 600;
-    transform: translate(-50%, -100px);
+    transform: translate(-50%, -200px);
     &.active {
       transform: translate(-50%, 0);
     }
