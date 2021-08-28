@@ -65,7 +65,8 @@
 
   .socialAlert {
     position: absolute;
-    background: lighten(color(dark), 30%);
+    border: 2px solid color(neon-blue);
+    background: transparent;
     color: color(neon-blue);
     top: 30px;
     left: 50%;

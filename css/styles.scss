@@ -35,7 +35,7 @@ $colors: (
 .bodyClone {
   position: relative;
   width: calc(100vw - 5px);
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   color: hsl(0, 0%, 35%);
 
   main.cont {
