@@ -41,6 +41,10 @@
   margin: 0 auto;
 }
 
+#gmail {
+  cursor: pointer;
+}
+
 .nav-link {
   cursor: pointer;
 }
