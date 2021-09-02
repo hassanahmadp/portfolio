@@ -77,15 +77,17 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    transition: all 0.7s ease-in-out;
     display: none;
     .line {
       border-radius: 10px;
       background: color(neon-blue);
       width: 100%;
       height: 4px;
-      transition: all 0.5s ease 0s;
+      transition: all 0.7s ease-in-out 0s;
     }
     &.active {
+      transform: rotate(180deg);
       .line {
         &1 {
           transform: translateY(10px) rotate(calc(5 * 45deg));
