@@ -468,24 +468,17 @@
 .loadDelayer {
   width: 100vw;
   height: 100vh;
-  background: #303030;
+  background: #292929;
+  min-height: 200px;
   position: fixed;
   z-index: 99999;
   -webkit-transition: -webkit-transform 1s ease 0.3s;
   transition: -webkit-transform 1s ease 0.3s;
   transition: transform 1s ease 0.3s;
   transition: transform 1s ease 0.3s, -webkit-transform 1s ease 0.3s;
-}
-
-.loadDelayer main {
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -494,90 +487,54 @@
           align-items: center;
 }
 
-.loadDelayer h1 {
-  color: #f2f2f2;
-  text-transform: uppercase;
-  font-size: 2rem;
-}
-
-.loadDelayer h1 span {
-  font-size: 4rem;
-  color: #3dcfd3;
-}
-
-.loadDelayer .preload-anim {
-  width: 5rem;
+.loadDelayer .circle {
+  position: relative;
+  width: 200px;
+  height: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.loadDelayer .preload-anim .dot {
-  margin: 0 auto;
-  opacity: 0;
-  background: #3dcfd3;
-  height: 1rem;
-  width: 1rem;
-  border-radius: 50%;
+.loadDelayer .logo {
+  position: absolute;
+  background: #000;
+  height: 150px;
+  width: 150px;
+  background: url("../images/Logo-white-text.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-animation: logoScale 3.5s ease-in-out infinite;
+          animation: logoScale 3.5s ease-in-out infinite;
 }
 
-.loadDelayer .preload-anim .dot1 {
-  -webkit-animation: dotAnimation 3s ease 0s infinite alternate;
-          animation: dotAnimation 3s ease 0s infinite alternate;
+.loadDelayer .text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-animation: rotateText 10s linear infinite;
+          animation: rotateText 10s linear infinite;
 }
 
-.loadDelayer .preload-anim .dot2 {
-  -webkit-animation: dotAnimation 3s ease 1s infinite alternate;
-          animation: dotAnimation 3s ease 1s infinite alternate;
-}
-
-.loadDelayer .preload-anim .dot3 {
-  -webkit-animation: dotAnimation 3s ease 2s infinite alternate;
-          animation: dotAnimation 3s ease 2s infinite alternate;
+.loadDelayer .text span {
+  color: #3dcfd3;
+  font-weight: bold;
+  position: absolute;
+  left: 50%;
+  font-size: 1.2em;
+  -webkit-transform-origin: 0 100px;
+          transform-origin: 0 100px;
 }
 
 .loadDelayer.get-lost {
   -webkit-transform: translateY(-120%);
           transform: translateY(-120%);
-}
-
-@media (max-width: 500px) {
-  .loadDelayer h1 {
-    font-size: 1rem;
-    text-align: center;
-  }
-  .loadDelayer h1 span {
-    font-size: 3rem;
-  }
-}
-
-@media (max-width: 313px) {
-  .loadDelayer h1 {
-    font-size: 1rem;
-  }
-  .loadDelayer h1 span {
-    font-size: 2rem;
-  }
-}
-
-@-webkit-keyframes dotAnimation {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes dotAnimation {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 .portfolio {
@@ -840,6 +797,74 @@
 @media (max-width: 500px) {
   .contactOverlay .social {
     padding: 2rem 1rem;
+  }
+}
+
+@-webkit-keyframes rotateText {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateText {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes logoScale {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  25% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  75% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes logoScale {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  25% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  75% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 /*# sourceMappingURL=styles.css.map */

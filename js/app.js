@@ -5,6 +5,9 @@ const logo = document.querySelector(".logo");
 const header = document.querySelector("header");
 const preloader = document.querySelector(".loadDelayer");
 const contactOverlay = document.querySelector(".contactOverlay");
+const text = document.querySelector(".loadDelayer .text p");
+
+
 
 // Menu toggle actions
 stairs.addEventListener("click", () => {
@@ -26,6 +29,12 @@ document.addEventListener("scroll", () => {
 window.addEventListener('load', () => {
     preloader.classList.add('get-lost');
 });
+
+text.innerHTML = text.innerHTML
+    .split("")
+    .map((char, i) => `<span style="transform: rotate(${i * 11.1}deg);">${char}</span>`)
+    .join("");
+
 
 // show contact overlay
 navBTN.addEventListener('click', () => {
