@@ -121,16 +121,16 @@
 .sect-1 header .cont .nav-button {
   margin-left: auto;
   padding: 4px 12px;
-  background: #3dcfd3;
+  background: #03dfe1;
   color: #161616;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
-  border: 2px solid #3dcfd3;
+  border: 2px solid #03dfe1;
 }
 
 .sect-1 header .cont .nav-button:hover {
   background: #161616;
-  color: #3dcfd3;
+  color: #03dfe1;
 }
 
 .sect-1 header.scrolled {
@@ -171,7 +171,7 @@
 
 .sect-1 .stairs .line {
   border-radius: 10px;
-  background: #3dcfd3;
+  background: #03dfe1;
   width: 100%;
   height: 4px;
   -webkit-transition: all 0.7s ease-in-out 0s;
@@ -292,7 +292,7 @@
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 0.5rem;
-  color: #3dcfd3;
+  color: #03dfe1;
 }
 
 .sect-1 .actual-cont_text h2 {
@@ -304,7 +304,7 @@
 
 .sect-1 .actual-cont_text h2 span {
   letter-spacing: 0.5rem;
-  color: #3dcfd3;
+  color: #03dfe1;
 }
 
 .sect-1 .actual-cont_text p {
@@ -329,31 +329,31 @@
 }
 
 .sect-1_btns a {
-  color: #3dcfd3;
+  color: #03dfe1;
   font-weight: 600;
   margin-right: 0.5rem;
   background: #161616;
   padding: 4px 12px;
   text-decoration: none;
-  border: 2px solid #3dcfd3;
+  border: 2px solid #03dfe1;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
   white-space: nowrap;
 }
 
 .sect-1_btns a:hover {
-  background: #3dcfd3;
+  background: #03dfe1;
   color: #161616;
 }
 
 .sect-1_btns a:nth-last-child(1) {
-  background: #3dcfd3;
+  background: #03dfe1;
   color: #161616;
 }
 
 .sect-1_btns a:nth-last-child(1):hover {
   background: #161616;
-  color: #3dcfd3;
+  color: #03dfe1;
 }
 
 @media (max-width: 665px) {
@@ -402,7 +402,7 @@
   }
   .sect-1 header .cont .nav-button:hover {
     background: white;
-    color: #3dcfd3;
+    color: #03dfe1;
   }
   .sect-1 header .cont .stairs {
     display: -webkit-box;
@@ -523,7 +523,7 @@
 }
 
 .loadDelayer .text span {
-  color: #3dcfd3;
+  color: #03dfe1;
   font-weight: bold;
   position: absolute;
   left: 50%;
@@ -768,9 +768,9 @@
 
 .contactOverlay .socialAlert {
   position: absolute;
-  border: 2px solid #3dcfd3;
+  border: 2px solid #03dfe1;
   background: transparent;
-  color: #3dcfd3;
+  color: #03dfe1;
   top: 30px;
   left: 50%;
   text-align: center;
