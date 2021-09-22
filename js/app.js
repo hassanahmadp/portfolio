@@ -6,7 +6,7 @@ const header = document.querySelector("header");
 const preloader = document.querySelector(".loadDelayer");
 const contactOverlay = document.querySelector(".contactOverlay");
 const text = document.querySelector(".loadDelayer .text p");
-
+const topTaker = document.querySelector(".topTaker");
 
 
 // Menu toggle actions
@@ -18,7 +18,7 @@ stairs.addEventListener("click", () => {
 
 // onscroll header properties change
 document.addEventListener("scroll", () => {
-    if (pageYOffset > 0) {
+    if (scrollY > 0) {
         header.classList.add("scrolled");
     } else {
         header.classList.remove("scrolled");
@@ -65,4 +65,15 @@ document.querySelector("#gmail").addEventListener('click', () => {
     setTimeout(() => {
         socialAlert.classList.remove('active');
     }, 3000);
+});
+
+// topTaker button
+document.addEventListener('scroll', () => {
+    console.log(scrollY);
+    if (scrollY > 65) {
+        topTaker.classList.remove('inActive');
+    } else {
+        topTaker.classList.add('inActive');
+
+    }
 });

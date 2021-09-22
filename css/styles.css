@@ -684,6 +684,44 @@
   pointer-events: none;
 }
 
+.topTaker {
+  position: fixed;
+  bottom: 3rem;
+  right: 2rem;
+  background: white;
+  color: #03dfe1;
+  height: 3rem;
+  width: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 0.6s cubic-bezier(0.55, -0.55, 0.43, 1.45);
+  transition: 0.6s cubic-bezier(0.55, -0.55, 0.43, 1.45);
+}
+
+.topTaker i {
+  position: relative;
+  bottom: 0.1rem;
+  font-size: 1.5rem;
+}
+
+.topTaker.inActive {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
 .contactOverlay {
   position: fixed;
   top: 0;
