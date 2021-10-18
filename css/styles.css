@@ -7,6 +7,8 @@
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(154, 154, 154, 0.5) transparent;
 }
 
 *::-webkit-scrollbar {
