@@ -1,3 +1,19 @@
+.notAvaliable {
+  width: 100vw !important;
+  .sect-1 {
+    margin: 0 !important;
+    padding: 0 !important;
+    min-height: none !important;
+    max-height: none !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .actual-cont_text {
+    align-items: center !important;
+    text-align: center;
+  }
+}
 .sect-1 {
   padding-top: 7rem;
   position: relative;
