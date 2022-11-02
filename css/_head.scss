@@ -1,5 +1,28 @@
 .notAvaliable {
   width: 100vw !important;
+  &_contactLinks {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    a {
+      color: color(neon-blue);
+      font-weight: 600;
+      background: color(dark);
+      padding: 4px 12px;
+      text-decoration: none;
+      border: 2px solid color(neon-blue);
+      transition: 0.3s ease;
+      flex: 1 1 10rem;
+      white-space: nowrap;
+      &:hover {
+        background: color(neon-blue);
+        color: color(dark);
+      }
+    }
+  }
   .sect-1 {
     margin: 0 !important;
     padding: 0 !important;
