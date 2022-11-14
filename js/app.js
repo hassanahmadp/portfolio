@@ -40,16 +40,16 @@ text.innerHTML = text.innerHTML
 navBTN.addEventListener('click', () => {
     contactOverlay.classList.add('active');
 });
-document.addEventListener('scroll', () => {
-    const totHeight = document.querySelector('.bodyClone').clientHeight;
+// document.addEventListener('scroll', () => {
+//     const totHeight = document.querySelector('.bodyClone').clientHeight;
 
-    if (scrollY === (totHeight - innerHeight)) {
-        contactOverlay.classList.add('active');
-        setTimeout(() => {
-            contactOverlay.classList.remove('active');
-        }, 3500);
-    }
-});
+//     if (scrollY === (totHeight - innerHeight)) {
+//         contactOverlay.classList.add('active');
+//         setTimeout(() => {
+//             contactOverlay.classList.remove('active');
+//         }, 3500);
+//     }
+// });
 
 // hide contact overlay
 document.querySelector('.overContact').addEventListener("click", () => {
